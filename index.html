@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bienvenidos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Menu">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservations">Reservas</a>
+                        </li>
+
+                        <!-- <a class="dropdown-item" href="#"> Menú </a>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="hero-container">
+            <img src="Restaurante1.jpg" alt="Imagen de fondo" class="hero-image">
+            <div class="overlay"></div>
+            <div class="title-overlay">
+                <h1>Romero's Place </h1>
+                <p>Comida para el corazón</p>
+            </div>
+        </div>
+        <br>
+        <div class="section-title text-center mb-5">
+            <h2 id="Menu">Menú </h2>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="HoodMart _ Commercial Range Hoods, Exhaust and Vents.jpeg" class="card-img-top"
+                            alt="carnes">
+                        <div class="card-body">
+                            <h5 class="card-title">Carnes</h5>
+                            <p class="card-text">Sabores intensos, cocción precisa. Nuestras carnes seleccionadas se
+                                preparan con dedicación y fuego lento, resaltando su textura y jugosidad. Cada corte
+                                cuenta
+                                una historia de tradición y carácter.</p>
+                            <a href="#" class="btn btn-primary">Ver Carta</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Guarniciones.JPG" class="card-img-top" alt="guarniciones">
+                        <div class="card-body">
+                            <h5 class="card-title">Guarniciones</h5>
+                            <p class="card-text">El complemento perfecto. Desde vegetales asados hasta cremosos purés,
+                                nuestras guarniciones equilibran cada plato con frescura, color y sabor. Pensadas para
+                                realzar sin opacar.</p>
+                            <a href="#" class="btn btn-primary">Ver carta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinos.jpeg" class="card-img-top" alt="vinos">
+                        <div class="card-body">
+                            <h5 class="card-title">Vinos</h5>
+                            <p class="card-text">Elegancia en cada copa. Una cuidada selección de vinos que armonizan
+                                con
+                                nuestros platos. Tintos robustos, blancos frescos y opciones locales para brindar con
+                                estilo
+                                y profundidad.</p>
+                            <a href="#" class="btn btn-primary">Ver carta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section id="reservations" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Reserva tu experiencia</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <form class="p-4 shadow-sm rounded bg-white">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="date" class="form-label">Fecha</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="time" class="form-label">Hora</label>
+                                    <input type="time" class="form-control" id="time" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Número de comensales</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="1">1 persona</option>
+                                    <option value="2" selected>2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                    <option value="5">5 personas</option>
+                                    <option value="6">6 personas</option>
+                                    <option value="7">7+ personas (mesa grande)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="requests" class="form-label">Comentarios y consideraciones
+                                    especiales</label>
+                                <textarea class="form-control" id="requests" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Reservar ahora</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>=
+            <div class="card">
+                <div class="card-footer">
+                    <br>
+                    <div id="footer" class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Redes sociales </h5>
+                            <p><a href="#">Facebook</a></p>
+                            <p><a href="#">Instagram</a></p>
+                            <p><a href="#">Whatsapp</a></p>
+                        </div>
+                        <div class="col">
+                            <h5>Dirección</h5>
+                         <p>San Gaspar 1234, Puerto Varas</p>
+                        </div>
+
+                        <div class="col">
+                            <h5>Horario</h5>
+                            <p>lunes a viernes</p>
+                            <p>09:0am a 10:00pm
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
