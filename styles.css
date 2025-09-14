@@ -72,3 +72,12 @@
 .card-footer{
     background-color: dimgray;
 }
+.justificado{
+    text-align: justify;
+    font-size: 16px;              /* Tamaño más pequeño */
+    text-align: center;           /* Centrado horizontal */
+    max-width: 800px;             /* Limita el ancho del texto */
+    margin: 0 auto;               /* Centra el bloque dentro de la página */
+    line-height: 1.6;             /* Mejora la legibilidad */
+    padding: 15px;                /* Espacio interno */
+}
